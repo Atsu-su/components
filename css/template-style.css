@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* ----------------------- */
+/* ページ/トップ page/top
+/* ----------------------- */
+/* page > top > top-kv */
+#top .kv {
+  padding-top: 138.8888888889%;
+  background-image: url(../img/top/bg-top-kv-sp@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 493px) {
+  #top .kv {
+    padding-top: 685px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #top .kv {
+    padding-top: 50.1464128843%;
+    background-image: url(../img/top/bg-top-kv@2x.jpg);
+  }
+}
+@media screen and (min-width: 1366px) {
+  #top .kv {
+    margin: 0 auto;
+    padding: 0;
+    width: 1366px;
+    height: 685px;
+  }
+}

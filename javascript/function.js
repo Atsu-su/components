@@ -8,6 +8,36 @@ const c = (value) => {
 }
 
 /* -----------------------------------------
+addClass()
+機能：クラスの追加
+----------------------------------------- */
+
+const addClass = (element, className) => {
+  element.classList.add(className);
+}
+
+/* -----------------------------------------
+removeClass()
+機能：クラスの削除
+----------------------------------------- */
+
+const removeClass = (element, className) => {
+  element.classList.remove(className);
+}
+
+/* -----------------------------------------
+removeClassAll()
+機能：クラスの削除
+対象：引数に指定されたのクラスが存在している要素全て
+----------------------------------------- */
+
+const removeClassAll = (elements, className) => {
+  elements.forEach((element) => {
+    element.classList.remove(className);
+  });
+}
+
+/* -----------------------------------------
 toggleClass()
 機能：クラスの付け替え
 ----------------------------------------- */

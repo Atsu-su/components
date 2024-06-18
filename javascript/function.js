@@ -32,27 +32,30 @@
   /* -----------------------------------------
   addClass()
   機能：クラスの追加
+  特記：クラス名は可変長の引数が可能
   ----------------------------------------- */
-  const addClass = (element, className) => {
-    element.classList.add(className);
+  const addClass = (element, ...className) => {
+    element.classList.add(...className);
   }
 
   /* -----------------------------------------
   removeClass()
   機能：クラスの削除
+  特記：クラス名は可変長の引数が可能
   ----------------------------------------- */
-  const removeClass = (element, className) => {
-    element.classList.remove(className);
+  const removeClass = (element, ...className) => {
+    element.classList.remove(...className);
   }
 
   /* -----------------------------------------
   removeClassAll()
   機能：クラスの削除
+  特記：クラス名は可変長の引数が可能
   対象：引数に指定されたのクラスが存在している要素全て
   ----------------------------------------- */
-  const removeClassAll = (elements, className) => {
+  const removeClassAll = (elements, ...className) => {
     elements.forEach((element) => {
-      element.classList.remove(className);
+      element.classList.remove(...className);
     });
   }
 
